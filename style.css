@@ -54,6 +54,7 @@
     font-weight: bold;
     background: linear-gradient(to right, #60a5fa, #3b82f6);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -175,24 +176,30 @@
 
 /* Style pour l'image de profil */
 .profile-image {
-    width: 350px;
-    height: 450px;
-    border-radius: 8px;
+    width: 400px;
+    height: 500px;
     object-fit: cover;
-    border: 3px solid rgba(59, 130, 246, 0.5);
-    box-shadow: 
-        0 0 30px rgba(59, 130, 246, 0.3),
-        inset 0 0 20px rgba(59, 130, 246, 0.2);
-    transition: all 0.4s ease;
-    transform: rotate(-3deg);
+    animation: float 3s ease-in-out infinite;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-15px) rotate(2deg);
+    }
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
 }
 
 .profile-image:hover {
-    transform: rotate(0deg) scale(1.02);
-    border-color: rgba(59, 130, 246, 0.8);
-    box-shadow: 
-        0 0 40px rgba(59, 130, 246, 0.4),
-        inset 0 0 30px rgba(59, 130, 246, 0.3);
+    transform: scale(1.05) translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.4);
 }
 
 /* Style du menu mobile */
@@ -224,32 +231,32 @@
 
 .mobile-menu a:hover {
     background: rgba(96, 165, 250, 0.1);
-    color: #60a5fa;
+    color: #116ad0;
     transform: translateX(10px);
 }
 
 /* Style de la section contact */
 .contact-text {
-    color: #60a5fa !important;
+    color: #116ad0 !important;
     text-shadow: 0 0 10px rgba(96, 165, 250, 0.3);
 }
 
 #contact p {
-    color: #93c5fd;
+    color: #116ad0;
 }
 
 #contact .contact-info a,
 #contact .contact-info span {
-    color: #60a5fa;
+    color: #116ad0;
     transition: color 0.3s ease;
 }
 
 #contact .contact-info a:hover {
-    color: #3b82f6;
+    color: #116ad0;
 }
 
 #contact .centers-interet p {
-    color: #93c5fd;
+    color: #116ad0;
 }
 
 /* Bouton WhatsApp flottant */
