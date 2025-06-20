@@ -61,9 +61,10 @@
                     </a>
                     <a href="#about" class="border border-blue-400 hover:border-blue-300 px-6 py-3 rounded-full transition-all duration-300">
                         En savoir plus
-                    </a>                    <a href="cv-baudoin-alifoe.pdf" download class="bg-custom-orange hover:bg-orange-600 px-6 py-3 rounded-full transition-all duration-300 flex items-center">
-                        <i class="fas fa-download mr-2"></i>Télécharger mon CV
-                    </a>
+                    </a>                    
+                   <a href="cv-baudoin-alifoe.pdf" id="cv-link" class="bg-custom-orange hover:bg-orange-600 px-6 py-3 rounded-full transition-all duration-300 flex items-center">
+                     <i class="fas fa-download mr-2"></i>Télécharger mon CV
+                   </a>
                 </div>
             </div>
             <div class="relative md:w-1/2 flex flex-col items-center">
@@ -413,6 +414,15 @@
                 nav.classList.remove('nav-scrolled');
             }
         });
+
+        // Ouvrir le CV dans un nouvel onglet sans forcer le téléchargement dans l'onglet courant
+    const cvLink = document.getElementById('cv-link');
+    cvLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        const url = this.getAttribute('href');
+        window.open(url, '_blank');
+        // Ne rien faire d'autre : le document ne s'ouvrira que dans le nouvel onglet
+    });
     </script>
 </body>
 </html>
