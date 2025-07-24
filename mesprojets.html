@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Projets - ALIFOE Kokou BAUDOIN</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav id="mainNav" class="modern-nav fixed w-full top-0 z-50 py-2">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html#accueil" class="nav-brand"><img src="logo  v 02 concept tech.png" alt="conceptTech" class="h-12"></a>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html#accueil" class="nav-link">Accueil</a>
+                <a href="index.html#about" class="nav-link">À propos</a>
+                <a href="index.html#experience" class="nav-link">Expérience</a>
+                <a href="index.html#competences" class="nav-link">Compétences</a>
+                <a href="index.html#formation" class="nav-link">Formation</a>
+                <a href="mesprojets.html" class="nav-link font-bold text-custom-orange">Mes Projets</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <button class="md:hidden mobile-menu-btn" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="mobile-menu md:hidden hidden">
+            <a href="index.html#accueil">Accueil</a>
+            <a href="index.html#about">À propos</a>
+            <a href="index.html#experience">Expérience</a>
+            <a href="index.html#competences">Compétences</a>
+            <a href="index.html#formation">Formation</a>
+            <a href="mesprojets.html">Mes Projets</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Section Mes Projets -->
+    <section id="mesprojets" class="hero-gradient text-white min-h-screen flex items-center pt-32 md:pt-40">
+        <div class="stars"></div>
+        <div class="hero-content container mx-auto flex flex-col md:flex-row items-center justify-center gap-8 pt-0">
+            <div class="fade-in relative z-10 w-full md:w-1/2">
+                <h1 class="hero-title text-5xl md:text-6xl font-extrabold mb-6">Mes Projets</h1>
+                <p class="hero-description mb-8 text-lg md:text-xl">
+                    Découvrez quelques réalisations et projets sur lesquels j'ai travaillé : développement web, mobile, design, streaming et plus encore.<br>
+                    Chaque projet est le reflet de ma passion pour l'innovation et la technologie.
+                </p>
+                <div class="flex flex-wrap gap-4 mb-8">
+                    <a href="contact.html" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-full transition-all duration-300 flex items-center">
+                        <i class="fas fa-envelope mr-2"></i>Me contacter
+                    </a>
+                    <a href="index.html#about" class="border border-blue-400 hover:border-blue-300 px-6 py-3 rounded-full transition-all duration-300">
+                        En savoir plus
+                    </a>
+                </div>
+            </div>
+            <div class="relative md:w-1/2 flex flex-col items-center">
+                <div class="grid md:grid-cols-2 gap-8 w-full">
+                    
+                    <!-- Projet CERFER -->
+                    <div class="bg-white bg-opacity-90 p-6 rounded-lg shadow-lg flex flex-col items-center mb-4">
+                        <img src="logo  v 02 concept tech.png" alt="Projet CERFER" class="rounded-lg mb-4 h-32 w-32 object-cover border-4 border-custom-orange">
+                        <h2 class="text-xl font-extrabold mb-2 text-blue-700">Projet CERFER</h2>
+                        <p class="text-gray-700 text-center mb-4">
+                            Application Laravel pour l'école CERFER (énergies renouvelables).<br>
+                            Trois rôles : <span class="font-semibold text-dark-blue">Administrateur</span>, <span class="font-semibold text-custom-orange">Client</span>, <span class="font-semibold text-blue-600">Technicien</span>.<br>
+                            Gestion des utilisateurs, des formations et des interventions techniques.
+                        </p>
+                        <span class="inline-block bg-custom-orange text-white px-3 py-1 rounded-full text-xs mb-2">Laravel</span>
+                        <div class="flex gap-2 mt-4">
+                            <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full transition-all text-center">Voir le projet</a>
+                            <a href="#" class="border border-blue-700 text-blue-700 px-4 py-2 rounded-full transition-all text-center hover:bg-blue-700 hover:text-white font-semibold">En savoir plus</a>
+                        </div>
+                    </div>
+                    <!-- Projet MDH -->
+                    <div class="bg-white bg-opacity-90 p-6 rounded-lg shadow-lg flex flex-col items-center mb-4">
+                        <img src="photo2.png" alt="Projet MDH" class="rounded-lg mb-4 h-32 w-32 object-cover border-4 border-custom-orange">
+                        <h2 class="text-xl font-extrabold mb-2 text-blue-700">Projet MDH</h2>
+                        <p class="text-gray-700 text-center mb-4">
+                            Site vitrine pour l'ONG humanitaire MDH.<br>
+                            Présentation des actions, équipe, contact et actualités.<br>
+                            <a href="https://alifoe.github.io/ONG_MDH/" target="_blank" class="text-blue-600 underline">Voir le site</a>
+                        </p>
+                        <span class="inline-block bg-blue-600 text-white px-3 py-1 rounded-full text-xs mb-2">HTML/CSS/JS</span>
+                        <div class="flex gap-2 mt-4">
+                            <a href="https://alifoe.github.io/ONG_MDH/" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full transition-all text-center">Voir le projet</a>
+                            <a href="#" class="border border-blue-700 text-blue-700 px-4 py-2 rounded-full transition-all text-center hover:bg-blue-700 hover:text-white font-semibold">En savoir plus</a>
+                        </div>
+                    </div>
+                    <!-- Projet Gestion de Garage -->
+                    <div class="bg-white bg-opacity-90 p-6 rounded-lg shadow-lg flex flex-col items-center mb-4">
+                        <img src="photo3.png" alt="Gestion de Garage" class="rounded-lg mb-4 h-32 w-32 object-cover border-4 border-custom-orange">
+                        <h2 class="text-xl font-extrabold mb-2 text-blue-700">Gestion de Garage</h2>
+                        <p class="text-gray-700 text-center mb-4">
+                            Application Laravel pour la gestion de parking et location de places.<br>
+                            Gestion des véhicules, des emplacements et des réservations.<br>
+                            Interface moderne et sécurisée.
+                        </p>
+                        <span class="inline-block bg-custom-orange text-white px-3 py-1 rounded-full text-xs mb-2">Laravel</span>
+                        <div class="flex gap-2 mt-4">
+                            <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full transition-all text-center">Voir le projet</a>
+                            <a href="#" class="border border-blue-700 text-blue-700 px-4 py-2 rounded-full transition-all text-center hover:bg-blue-700 hover:text-white font-semibold">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-8 mt-12">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 ALIFOE Kokou BAUDOIN. Tous droits réservés.</p>
+            <p class="mt-2 text-gray-400">Technicien Réseau & Développeur passionné</p>
+        </div>
+    </footer>
+
+    <!-- Bouton WhatsApp flottant -->
+    <a href="https://wa.me/22897734381" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
